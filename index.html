@@ -1,8 +1,91 @@
+<!--me sirve para definir el tipo de estandar que voy a usar para mi pagina -->
+<!doctype html>
 <html>
-<head>
-	<title>Hola HTML</title>
-</head>
-<body>
-	
-</body>
+	<head>
+		<title>Pagina de Ejemplo</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<header>
+			<h1>Información personal</h1>		
+		</header>
+		<form>
+			<div>
+				<label>Nombre: </label>
+				<input type="text" placeholder="Escriba su Nombre aqui"/>
+			</div>
+			<div>
+				<label>Apellido: </label>
+				<input type="text" placeholder="Escriba su Apellido aqui"/>
+			</div>
+			<div>
+				<label>Fecha de nacimiento: </label>
+				<input type="date"/>
+			</div>	
+			<div>
+				<label>Corre Electrónico: </label>
+				<input type="email"/>
+			</div>
+			<div>
+				<label>Dirreción: </label>
+				<input type="text" maxlength=48 />
+			</div>
+			<div>
+				<label>Código postal:</label>
+				<input type="number" />
+			</div>
+			<div>
+				<label>País:</label>
+				<select>
+					<option value="nic">Nicaragua</option>
+					<option value="gua">Guatemala</option>
+					<option value="hon">Honduras</option>
+				</select>
+			</div>
+			<div>
+				<label>Teléfono:</label>
+				<input type="text" maxlength="8"/>
+			</div>
+			<div>
+				<label>Color favorito:</label>
+				<input type="color" />
+			</div>
+			<div>
+				<label>Lenguaje de programación favoritos:</label>
+				<input type="text" list="programacion" />
+				<datalist id="programacion">
+					<option value="csharp">C#</option>
+					<option value="python">Python</option>
+					<option value="java">Java</option>
+				</datalist>
+			</div>
+			<div>
+				<label>Sexo:</label>
+				Hombre <input value="1" checked="checked" name="sexo" type="radio" />
+				Mujer <input value="2" name="sexo" type="radio" />
+			</div>
+			<div>
+				<label>Deporte favorito:</label>
+				Football <input value="fb" type="checkbox"/>
+				Baseball <input value="bb" type="checkbox"/>
+			</div>
+			<div>
+				<label>Clases que estudia actualmente:</label>
+				<select multiple="multiple">
+					<option value="pg">Programación Gráfica</option>
+					<option value="ia">Inteligencia artificial</option>
+					<option value="mat">Matemática 3</option>
+				</select>
+			</div>
+			<div>
+				<label>Comentarios:</label>
+				<textarea rows="10" cols="50"></textarea>
+			</div>
+			<div>
+				<label>Acciones: </label>
+				<input type="submit" />
+				<input type="reset" />
+			</div>
+		</form>
+	</body>
 </html>
